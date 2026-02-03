@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Me Two - Christian A. Bradna Diaz</title>
+    <!-- 1. Google Font: Roboto (Sans Serif) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. Set font to sans serif google font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+        }
+
+        /* 2. H1 and H2 styling */
+        h1,
+        h2 {
+            color: #2c3e50;
+            /* Example color */
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        /* 3. List styling: Border, Center on page, Items NOT centered */
+        ul {
+            border: 2px solid #34495e;
+            width: 300px;
+            /* specific width to show centering */
+            margin: 0 auto;
+            /* Center the list box */
+            padding: 20px 40px;
+            text-align: left;
+            /* Ensure list items are not centered */
+        }
+
+        /* 4. Favorite Food Image styling (background image, adjacent text) */
+        .food-container {
+            margin-top: 20px;
+        }
+
+        .food-image {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            background-image: url('images/mapotofu.jpg');
+            background-size: cover;
+            background-position: center;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+
+        .food-text {
+            display: inline-block;
+            width: 400px;
+            vertical-align: top;
+        }
+
+        /* 5. Table styling: Alternate row background color */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* 6. Form styling: Labels in one column, elements in right column */
+        .form-row {
+            margin-bottom: 15px;
+            overflow: hidden;
+            /* Clear floats */
+        }
+
+        .form-label {
+            float: left;
+            width: 150px;
+            text-align: right;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            float: left;
+        }
+
+        /* Clearfix for form container if needed, or rely on .form-row overflow */
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Name -->
+    <h1>Christian A. Bradna Diaz</h1>
+
+    <!-- 2. Trip/Getaway -->
+    <h2>My Recent Getaway</h2>
+    <p>Last summer during August, I went on a trip with some friends to Tennessee. We went down to Gatlinburg and took
+        some hikes around the Smokies, where I even saw a wild river otter! I explored downtown Gatlinburg and tried the
+        local moonshine and ciders. We stayed in a remote wooden cabin in the mountains. All in all, a great experience
+        for my first time in the US South.</p>
+
+    <!-- 3. Pets List -->
+    <h2>My Favorite Pets</h2>
+    <ul>
+        <li>A striped skunk named Snickers</li>
+        <li>A german shepherd named Ryker</li>
+        <li>An pine marten named Jatt (short for Jattheew)</li>
+    </ul>
+
+    <!-- 4. Restaurant -->
+    <h2>Favorite Restaurant</h2>
+    <p>
+        My favorite restaurant is <a href="https://bunshousemedford.com" target="_blank">Bun's House</a> in Medford.
+        It is a Sichuan Chinese food restaurant that used to be called Chili Garden.
+        I love it because they are not afraid of spice, which makes their dishes incredibly authentic and flavorful.
+    </p>
+
+    <!-- 5. Favorite Food Display -->
+    <h2>Favorite Food</h2>
+    <div class="food-container">
+        <!-- Image as background in this div -->
+        <div class="food-image"></div>
+        <!-- Explanatory text in adjacent div -->
+        <div class="food-text">
+            My favorite dish is Mapo Tofu. I like to eat it served piping hot over a bed of fluffy white rice, which
+            helps balance the intense heat and numbing sensation of the Sichuan peppercorns.
+        </div>
+    </div>
+
+    <!-- 6. Books Table -->
+    <h2>Favorite Books</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Cover</th>
+                <th>Author</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The Art of Loving</td>
+                <td><img src="images/artofloving.jpg" alt="The Art of Loving Cover" width="100"></td>
+                <td>Erich Fromm</td>
+                <td>A philosophical deconstruction of love that provides a practical framework for practicing it in the
+                    complexities of modern society.</td>
+            </tr>
+            <tr>
+                <td>The Power of Vulnerability</td>
+                <td><img src="images/powerofvulnerability.png" alt="The Power of Vulnerability Cover" width="100"></td>
+                <td>Brene Brown</td>
+                <td>Discusses how embracing vulnerability is essential for wholehearted living and courageous
+                    leadership.</td>
+            </tr>
+            <tr>
+                <td>Man And His Symbols</td>
+                <td><img src="images/manandhissymbols.jpg" alt="Man And His Symbols Cover" width="100"></td>
+                <td>Carl Jung</td>
+                <td>Explores the realization of the self through the integration of the conscious and unconscious mind.
+                </td>
+            </tr>
+            <tr>
+                <td>Life Letters and Epicurean Philosophy of Ninon De L'Enclos</td>
+                <td><img src="images/lifeletters.jpeg" alt="Ninon De L'Enclos Cover" width="100"></td>
+                <td>Ninon de Lenclos</td>
+                <td>A gritty, and empoweringly feminist collection of letters from one of history's most fascinating
+                    women.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 7. Guest Book Form -->
+    <h2>Guest Book</h2>
+    <form>
+        <div class="form-row">
+            <label class="form-label" for="fname">First Name:</label>
+            <div class="form-input">
+                <input type="text" id="fname" name="fname">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="lname">Last Name:</label>
+            <div class="form-input">
+                <input type="text" id="lname" name="lname">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="email">Email:</label>
+            <div class="form-input">
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="city">City:</label>
+            <div class="form-input">
+                <input type="text" id="city" name="city">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="state">State:</label>
+            <div class="form-input">
+                <select id="state" name="state">
+                    <option value="MA">Massachusetts</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="VT">Vermont</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="ME">Maine</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label"></div> <!-- Spacer -->
+            <div class="form-input">
+                <input type="submit" value="Sign Guestbook">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
